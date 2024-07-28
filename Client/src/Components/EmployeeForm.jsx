@@ -68,8 +68,10 @@ function EmployeeForm() {
     };
 
     const handleErrors = (errors) => {
+        console.log("errors", errors)
+        console.log()
         errors.forEach(error => {
-            toast.error(`${error.msg} (Field: ${error.path})`);
+            toast.error(`${error.message}`);
         });
     };
 

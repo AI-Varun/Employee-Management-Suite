@@ -31,6 +31,7 @@ const createUserSchema = Joi.object({
     course: Joi.string().required().messages({
         'string.empty': 'Course is required'
     }),
+    image: Joi.string().optional()
 });
 
 const updateUserSchema = Joi.object({
@@ -56,6 +57,7 @@ const updateUserSchema = Joi.object({
     course: Joi.string().optional().messages({
         'string.empty': 'Course must be a string'
     }),
+    image: Joi.string().optional()
 });
 
 const validateRequest = (schema) => (req, res, next) => {
