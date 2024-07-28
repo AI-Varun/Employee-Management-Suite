@@ -1,0 +1,182 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  height: 87.8VH;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  color: #fff;
+  height: 130px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 16px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.employee-list-header {
+  display: contents;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.count {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 35px;
+}
+
+.search {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 44px;
+}
+
+
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.total-count {
+  font-size: 1.2rem;
+  float: right;
+  margin-left: 80px;
+}
+
+.create-employee-button {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #131313;
+  border-radius: 4px;
+  font-size: 1rem;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.paragraph {
+  margin-left: 800px;
+}
+
+.table-container {
+  flex: 1;
+  overflow-y: auto;
+  max-height: calc(84.8VH - 140px - 36px);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(169, 200, 234, 0.5) transparent;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 123, 255, 0.5);
+  border-radius: 4px;
+}
+
+.employee-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-list-table th,
+.employee-list-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.employee-list-table th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.employee-list-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.employee-list-table button {
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.ptag {
+  margin-left: 500px;
+}
+
+.employee-image {
+  width: 50px;
+  height: 50px;
+}
